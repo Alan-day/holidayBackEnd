@@ -14,14 +14,14 @@ public class holiday_tiles {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private int id;
-    private int picture;
+    private String picture;
 
     private String description_tile;
     public int getId() {
         return id;
     }
 
-    public holiday_tiles(int id, int picture, String description_tile) {
+    public holiday_tiles(int id, String picture, String description_tile) {
         this.id = id;
         this.picture = picture;
         this.description_tile = description_tile;
@@ -31,11 +31,11 @@ public class holiday_tiles {
         this.id = id;
     }
 
-    public int getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(int picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 

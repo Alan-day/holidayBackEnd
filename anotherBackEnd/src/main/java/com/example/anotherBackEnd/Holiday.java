@@ -16,6 +16,9 @@ public class Holiday {
 
 
     private String description;
+    public Holiday() {
+        // Empty default constructor
+    }
 
     public Holiday(int holiday_id, String description, String date_started, String date_ended) {
         this.holiday_id = holiday_id;
